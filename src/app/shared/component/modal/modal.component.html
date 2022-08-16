@@ -1,0 +1,31 @@
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="row">
+          <div *ngFor="let nomes of campos[0].headerTable;let i = index" class="col-6">
+            <div *ngIf=" i<7">
+              <app-input [nameCampos]="nomes"></app-input>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+      </div>
+
+    </div>
+  </div>
+</div>

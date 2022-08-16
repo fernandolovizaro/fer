@@ -1,0 +1,13 @@
+th{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+}
+td{
+  text-align: center;
+  text-transform: uppercase;
+}
+td:last-child{
+  display: flex;
+  gap: 10px;
+}

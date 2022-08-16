@@ -1,0 +1,22 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th *ngFor="let thList of dadosTable[0].headerTable">{{thList}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let trList of dadosTable[0].bodyTable;let i = index">
+      <td>{{trList.id}}</td>
+      <td>{{trList.cod_prod}}</td>
+      <td>{{trList.cod_sub_prod}}</td>
+      <td>{{trList.name_sun_prod}}</td>
+      <td>{{trList.name_comp_sub_prod}}</td>
+      <td>{{trList.func_alt}}</td>
+      <td>{{trList.data}}</td>
+      <td>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">editar</button>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal">excluir</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

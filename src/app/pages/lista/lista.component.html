@@ -1,0 +1,9 @@
+<div class="card mt-5">
+  <div class="card-header bg-primary text-light">
+    <h2>Produtos Cadastrados</h2>
+  </div>
+  <div class="card-body">
+    <app-table [dadosTable]="lista"></app-table>
+  </div>
+</div>
+<app-modal [campos]="lista"></app-modal>
